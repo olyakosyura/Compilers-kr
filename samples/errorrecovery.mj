@@ -1,0 +1,39 @@
+program P
+	int x.y,A;
+	//---| point not expected here should recover on class
+	class Table {
+		int[] pos;
+		int[ neg;
+		//--| missing right bracket
+	// missing right brace, should recover on next left brace
+	
+{
+    titi(){
+	// return type missing, but should be omitted because two errors have been thrown before
+		return 1;
+    }
+
+    int poken(int[] x, int y)
+    {
+		x[] = 10 % y;
+		// invalid designator should recover on next line
+        return x[y];
+    }
+
+	void main()
+        int input;
+	{
+        rint('?');
+		// invalid method name should recover on next keyword
+        
+		while(1 =! 2) {
+		//-------| invalid operator, should recover on left brace
+			read(input);
+			print(input);
+			print('\n');
+		}
+		
+        chr2(ord('a'));
+
+	}
+// missing closing brace, should recover on eof

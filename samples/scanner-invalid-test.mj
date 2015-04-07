@@ -1,0 +1,28 @@
+// Single character identifiers
+"
+#
+~
+é
+§
+µ
+@ 
+
+// names
+2Toot
+tötö
+
+// numbers
+0.01
+123,002
+
+// Compound tokens
+=+
+!-
+<!
+>* 
+
+// character constants
+'evil'
+'\a'
+'\nn'
+'a

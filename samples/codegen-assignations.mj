@@ -1,0 +1,92 @@
+// This sample program contains:
+//
+// * class definition
+// * constant definition
+// * int definition
+// * array definition
+// * variables retrieval and definition:
+//     * arrays
+//     * objects
+//     * ints
+
+program P
+    // define a class, with some attributes
+	class Point {
+		int x;
+		int y;
+	}
+    // define a constant
+    final int one = 1;
+{
+     void println(int x){
+         print(x);
+         print('\n');
+     }
+
+	void main()
+        int i, j, k, l, m, n, o, p;
+        Point a;
+        int[] mytable;
+        char[] string;
+        char mychar;
+	{
+        // assignation of a constant
+        i = one;
+        println(i);
+
+        // assignation of an int
+        i = 00010;
+        println(i);
+
+        // assignation of a variable
+        j = i;
+        println(j);
+
+        // negation for variables and constants
+        k = -i;
+        l = -2;
+        println(k);
+        println(l);
+
+        // addition / soustraction / multiplication / division
+        m = 2 + 3;
+        n = i - j;
+        o = i * j;
+        p = i / j;
+
+        println(m);
+        println(n);
+        println(o);
+        println(p);
+
+        // object creation
+        a = new Point;
+
+        // object attribute assignment
+        a.x = 20;
+        a.y = 40;
+
+        // Object field access
+        println(a.x);
+        println(a.y);
+
+        // table instanciation
+        mytable = new int[3] ;
+
+        // table element assignation
+        mytable[0] = 50;
+
+        // and retrieval
+        i = mytable[0];
+        println(i); 
+
+        // work also with strings (char arrays)
+        string = new char[2];
+        string[0] = 'a';
+
+        print(string[0]);
+        print('\n');
+
+        mychar = string[0];
+	}
+}

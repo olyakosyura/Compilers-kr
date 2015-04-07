@@ -1,0 +1,60 @@
+// Single character identifiers
+@
+Z
+
+// Single character tokens
++
+-
+*
+/
+%
+<
+>
+=
+;
+,
+.
+(
+)
+[
+]
+{
+}
+
+// names
+Toot
+toto
+ideNtifier
+tata667
+t0tA6azd
+
+// keywords
+class
+else
+final
+if
+new
+print
+program
+read
+return
+void
+while
+
+// numbers
+0
+123
+00123
+
+// Compound tokens
+==
+!=
+<=
+>=
+
+// character constants
+'a'
+'1'
+'\r'
+'\n'
+'\t'

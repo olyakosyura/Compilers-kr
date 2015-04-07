@@ -1,0 +1,25 @@
+COMPILER EX1
+    Node rootnode;
+    
+IGNORECASE
+
+CHARACTERS
+    letter = 'A'..'Z'.
+
+TOKENS
+    ident = letter {letter}.
+
+IGNORE '\t' + '\r' + '\n'
+
+PRODUCTIONS
+    Node <out Node n>                           (. n = new Node(); .)
+    = "("
+    [ ident                                     (. n.value = t.val; .)
+    [ Node <out n.left> Node <out n.right> ]
+    ] ")".
+
+
+    EX1                                         (. Node n; .)
+    = Node <out n>                              (. rootnode = n; .)
+    .
+END EX1.

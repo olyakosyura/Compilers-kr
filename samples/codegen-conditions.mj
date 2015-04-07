@@ -1,0 +1,32 @@
+program P
+{
+	void main()
+    // enter 0 1
+        int x;
+	{
+        if (1 == 2){
+        // const1
+        // const2
+        // jne else
+            x = 3;
+            // const3
+            // store 0
+            print('e');
+            // const code for e
+            // bprint
+            // jmp end of the else
+        } else {
+            x = 4;
+            // const 4
+            // store0
+
+            print('v');
+            // const code for v
+            // bprint
+        }
+        // exit
+        // return
+	}
+}
+
+
