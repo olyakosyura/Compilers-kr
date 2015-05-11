@@ -14,7 +14,7 @@ class Lexer:
 	ch = ' ' # assume the first char is a space
 
 	def error(self, msg):
-		print 'Lexer error: ', msg
+		print ('Lexer error: ', msg)
 		sys.exit(1)
 
 	def getc(self):
@@ -69,7 +69,7 @@ class Parser:
 		self.lexer = lexer
 
 	def error(self, msg):
-		print 'Parser error:', msg
+		print ('Parser error:', msg)
 		sys.exit(1)
 
 	def term(self):
@@ -276,10 +276,10 @@ class VirtualMachine:
 			elif op == JMP: pc = arg;
 			elif op == HALT: break
 
-		print 'Execution finished.'
+		print ('Execution finished.')
 		for i in xrange(26):
 			if var[i] != 0:
-				print '%c = %d' % (chr(i+ord('a')), var[i])
+				print ('%c = %d' % (chr(i+ord('a')), var[i]))
 
 
 l = Lexer()
